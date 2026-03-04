@@ -2,68 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Hidden in the Source Code: Learning the Basics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Unordered List Tutorial</title>
     <style>
         body {
-            font-family: sans-serif;
-            line-height: 1.6;
+            background: #fff0f5; /* lavender blush background for soft pink vibe */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FFB6C1; /* light pink */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #800080; /* purple-ish accent */
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            width: 90%;
             max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: #f4f4f9;
+            background-color: #FFC0CB; /* soft pink section background */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+        section h2 {
+            margin-top: 0;
+            color: #FF1493; /* deep pink */
         }
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-        .video-wrapper video, .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+
+        video {
             width: 100%;
-            height: 100%;
-            border: none;
+            border-radius: 10px;
         }
-        h2 { color: #333; }
-        ul { background: #eef2ff; padding: 20px 40px; border-radius: 8px; }
-        li { margin-bottom: 8px; font-weight: 500; }
+
+        p {
+            line-height: 1.6;
+        }
+	@font-face {
+  	font-family: 'BetterTogether';
+  	src: url('fonts/BetterTogether.ttf') format('truetype');
+	}
+
+	.script-text {
+  	font-family: 'BetterTogether', cursive;
+  	font-size: 40px;
+}
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h2>How to Create an Unordered List</h2>
-    
-    <div class="video-wrapper">
+    <header>
+        <p class="script-text">Hidden in the Source Code: Learning the Basics</p>
+    </header>
+
+    <section>
         <video controls>
-            <source src="ict_pt.mp4" type="video/mp4">
+            <source src="https://youtu.be/embed/vrCEft9BEWY">
             Your browser does not support the video tag.
         </video>
+    </section>
 
-        </div>
-
-    <hr>
-
-    <h3>Key Takeaways:</h3>
-    
-    <ul>
-        <li>Use the <code>&lt;ul&gt;</code> tag to start the list.</li>
-        <li>Each item inside the list must use the <code>&lt;li&gt;</code> tag.</li>
-        <li>Unordered lists use bullets by default.</li>
-        <li>You can change bullet styles using the CSS <code>list-style-type</code> property.</li>
-    </ul>
-</div>
+    <section>
+        <h2>About the Video</h2>
+        <p>
+            Welcome to our HTML tutorial video! In this video, we will guide you step by step on how to add images to your webpage, create ordered and unordered lists, and apply color to your text to make your website more creative and visually appealing. Whether you're a beginner or just reviewing the basics, this tutorial will help you understand these essential HTML skills in a simple and easy way. Let’s start coding! 
+        </p>
+    </section>
 
 </body>
 </html>
