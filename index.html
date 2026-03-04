@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background: #fff0f5; /* lavender blush background for soft pink vibe */
+            background: #fff0f5; 
             font-family: Arial, sans-serif;
             color: #333;
             margin: 0;
@@ -14,14 +14,14 @@
         }
 
         header {
-            background-color: #FFB6C1; /* light pink */
+            background-color: #FFB6C1; 
             padding: 20px;
             text-align: center;
         }
 
-        header h1 {
+        header h1, .script-text {
             margin: 0;
-            color: #800080; /* purple-ish accent */
+            color: #800080; 
         }
 
         section {
@@ -29,33 +29,40 @@
             margin: 20px auto;
             width: 90%;
             max-width: 800px;
-            background-color: #FFC0CB; /* soft pink section background */
+            background-color: #FFC0CB; 
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
 
         section h2 {
             margin-top: 0;
-            color: #FF1493; /* deep pink */
+            color: #FF1493; 
         }
 
-        video {
+        iframe, img {
             width: 100%;
+            max-width: 800px;
             border-radius: 10px;
+        }
+
+        img {
+            height: auto;
         }
 
         p {
             line-height: 1.6;
         }
-	@font-face {
-  	font-family: 'BetterTogether';
-  	src: url('fonts/BetterTogether.ttf') format('truetype');
-	}
 
-	.script-text {
-  	font-family: 'BetterTogether', cursive;
-  	font-size: 40px;
-}
+        @font-face {
+            font-family: 'BetterTogether';
+            src: url('fonts/BetterTogether.ttf') format('truetype');
+        }
+
+        .script-text {
+            font-family: 'BetterTogether', cursive;
+            font-size: 40px;
+        }
     </style>
 </head>
 <body>
@@ -65,20 +72,27 @@
     </header>
 
     <section>
-    <iframe width="100%" height="450"
-        src="https://www.youtube.com/embed/vrCEft9BEWY"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
-</section>
+        <h2>Watch the Video</h2>
+        <iframe 
+            src="https://www.youtube.com/embed/vrCEft9BEWY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </section>
 
     <section>
         <h2>About the Video</h2>
         <p>
             Welcome to our HTML tutorial video! In this video, we will guide you step by step on how to add images to your webpage, create ordered and unordered lists, and apply color to your text to make your website more creative and visually appealing. Whether you're a beginner or just reviewing the basics, this tutorial will help you understand these essential HTML skills in a simple and easy way. Let’s start coding! 
         </p>
+    </section>
+
+    <section>
+        <h2>Check Out This Image</h2>
+        <img src="epic.jpg" alt="Description of image">
+        <p>This is an example image section. Replace "myimage.jpg" with your image file or online image URL.</p>
     </section>
 
 </body>
